@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mazahua Hecho con Amor — Cooperativa</title>
+  <meta name="description" content="Cooperativa inclusiva que empodera a mujeres mazahuas a través de artesanías y gastronomía tradicional.">
+  <style>
+    /* Reset sencillo */
+    :root {
+      --primario: #0B5E3A;
+      --sec: #F2C94C;
+      --accent: #E05A4F;
+      --bg: #FFFFFF;
+      --text: #0A0A0A;
+      --muted: #5A5A5A;
+      --radius: 12px;
+      --gap: 18px;
+      --maxw: 1100px;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color: var(--text);
+      background: var(--bg);
+    }
+    a {
+      color: var(--primario);
+    }
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .skip-link {
+      position: absolute;
+      left: -999px;
+      top: auto;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+    }
+    .skip-link:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      margin-bottom: 12px;
+      padding: 8px;
+      background: #000;
+      color: #fff;
+      z-index: 999;
+    }
+    header {
+      border-bottom: 1px solid #eee;
+    }
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .logo {
+      width: 56px;
+      height: 56px;
+      background: var(--sec);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+    .brand-text h1 {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    .brand-text p {
+      font-size: 12px;
+      color: var(--muted);
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    nav a {
+      padding: 8px 10px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+    nav a:focus {
+      outline: 3px solid #ffd;
+      outline-offset: 3px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      padding: 28px 0;
+    }
+    .hero .txt h1 {
+      font-size: 28px;
+      margin: 0 0 8px;
+    }
+    .hero img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      border: 1px solid #eee;
+      padding: 12px;
+      border-radius: 10px;
+      background: #fff;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 10px;
+      background: var(--primario);
+      color: #fff;
+      border: none;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .btn:focus {
+      outline: 3px solid #F2C94C;
+      outline-offset: 3px;
+    }
+    form label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 12px;
+    }
+    .sr-only {
+      position: absolute;
+      left: -9999px;
+    }
+    footer {
+      border-top: 1px solid #eee;
+      padding: 20px 0;
+      margin-top: 24px;
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .form-fields {
+      margin-bottom: 12px;
+    }
+    .form-message {
+      padding: 10px;
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+      border-radius: 5px;
+      margin-bottom: 15px;
+      display: none;
+    }
+    @media(min-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr 1fr;
+      }
+      .hero .txt h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="container" role="banner">
+    <div class="header-content">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">MH</div>
+        <div class="brand-text">
+          <h1>Mazahua Hecho con Amor</h1>
+          <p>Cooperativa Inclusiva</p>
+        </div>
+      </div>
+      <nav role="navigation" aria-label="Menú principal">
+  <a href="inicio.html">Inicio</a>
+  <a href="historia.html">Nuestra historia</a>
+  <a href="productos.html">Productos</a>
+  <a href="talleres.html">Talleres</a>
+  <a href="impacto.html">Impacto</a>
+  <a href="contacto.html">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="txt">
+        <h1 id="hero-title">Convertir la tradición mazahua en una fuente sostenible de ingresos</h1>
+        <p>Cooperativa de mujeres artesanas y productoras de alimentos tradicionales. Comercio justo, calidad y historia en cada pieza.</p>
+        <p><a class="btn" href="#productos">Ver productos</a></p>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=60" alt="Mujeres mazahuas bordando en telar comunitario" />
+      </div>
+    </section>
+
+    <section id="historia" aria-labelledby="historia-h">
+      <h2 id="historia-h">Nuestra Historia</h2>
+      <p>San Felipe del Progreso es un municipio con gran tradición mazahua. Nuestra cooperativa busca formalizar y valorar los saberes tradicionales...</p>
+      <figure>
+        <video controls width="100%" aria-describedby="video-desc">
+          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+          Tu navegador no soporta video.
+        </video>
+        <figcaption id="video-desc">Video con subtítulos y transcripción disponible. Describe talleres de bordado y recetas tradicionales.</figcaption>
+      </figure>
+    </section>
+
+    <section id="productos" aria-labelledby="prod-h">
+      <h2 id="prod-h">Productos</h2>
+      <div class="grid" role="list">
+        <article class="card" role="listitem">
+          <img src="https://images.unsplash.com/photo-1520975918356-9df0e5b9b9b1?auto=format&fit=crop&w=800&q=60" alt="Blusa mazahua bordada, colores rojo y blanco">
+          <h3>Blusa Bordada</h3>
+          <p>100% artesanal. Incluye etiqueta con la historia de la artesana.</p>
+          <p><strong>$1200 MXN</strong></p>
+          <p><button class="btn" aria-label="Agregar blusa bordada al carrito">Agregar al carrito</button></p>
+        </article>
+
+        <article class="card" role="listitem">
+          <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?auto=format&fit=crop&w=800&q=60" alt="Rebozo tejido a mano">
+          <h3>Rebozo artesanal</h3>
+          <p>Hecho con técnicas tradicionales mazahuas.</p>
+          <p><strong>$1500 MXN</strong></p>
+          <p><button class="btn">Agregar al carrito</button></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="talleres" aria-labelledby="talleres-h">
+      <h2 id="talleres-h">Talleres y Turismo Cultural</h2>
+      <p>Ofrecemos talleres vivenciales de bordado y cocina tradicional. Reserva tu lugar:</p>
+      <div id="form-message" class="form-message" role="status" aria-live="polite"></div>
+      <form id="form-contact" action="#" method="post" aria-describedby="form-desc">
+        <p id="form-desc">Formulario para inscribirse a talleres. Los campos con (*) son obligatorios.</p>
+        <div class="form-fields">
+          <label for="name">Nombre *</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+
+        <div class="form-fields">
+          <label for="email">Correo *</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+
+        <div class="form-fields">
+          <label for="taller">Selecciona taller *</label>
+          <select id="taller" name="taller" required>
+            <option value="">-- Elige una opción --</option>
+            <option value="bordado">Bordado</option>
+            <option value="cocina">Cocina tradicional</option>
+          </select>
+        </div>
+
+        <div class="form-fields">
+          <label for="mensaje">Mensaje (opcional)</label>
+          <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+        </div>
+
+        <p><button class="btn" type="submit">Enviar inscripción</button></p>
+      </form>
+    </section>
+
+    <section id="impacto" aria-labelledby="impacto-h">
+      <h2 id="impacto-h">Impacto</h2>
+      <ul class="grid">
+        <li class="card">Aumento de ingresos estimado: <strong>30–40%</strong></li>
+        <li class="card">Preservación y transmisión cultural</li>
+        <li class="card">Creación de empleo digno</li>
+      </ul>
+    </section>
+
+    <section id="contacto" aria-labelledby="contacto-h">
+      <h2 id="contacto-h">Contacto</h2>
+      <p>Dirección: San Felipe del Progreso, Estado de México</p>
+      <p>WhatsApp: +52 1 555 555 5555</p>
+      <p>Email: contacto@mazahuahechoconamor.mx</p>
+    </section>
+
+  </main>
+
+  <footer class="container" role="contentinfo">
+    <div class="footer-content">
+      <div>© 2025 Mazahua Hecho con Amor</div>
+      <div>
+        <a href="#">Accesibilidad</a> • <a href="#">Términos</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('form-contact').addEventListener('submit', function(e){
+      e.preventDefault();
+      const messageDiv = document.getElementById('form-message');
+      messageDiv.textContent = 'Gracias por inscribirte. Nos pondremos en contacto.';
+      messageDiv.style.display = 'block';
+      this.reset();
+    });
+  </script>
+</body>
+</html>
